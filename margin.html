@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margin</title>
+
+    <style>
+
+        /*
+            kondisi 1
+                property: value;    ==> value = atas = kanan = bawah = kiri
+
+            kondisi 2
+                property: value1 value2;    ==> value1 = atas = bawah; value2 = kanan = kiri
+
+            kondisi 3
+                property: value1 value2 value3 value4;    ==> value1 = atas; value2 = kanan; value3 = bawah; value4 = kiri
+
+            kondisi 4
+                property-top: value1;
+                property-right: value2;
+                property-bottom: value3;
+                property-left: value4;
+
+        */
+
+        #box-1 {
+            background: blueviolet;
+            height: 200px;
+            width: 300px;  
+            margin: 20px; /* semua arahnya 20px */
+        }
+
+        #box-2 {
+            background: red;
+            height: 100px;
+            width: 600px;  
+            margin: 60px 150px; /* atas = bawah = 60px; kanan = kiri = 150px */
+        }
+
+        #box-3 {
+            background: orange;
+            height: 200px;
+            width: 200px;  
+            margin:  10px 60px 150px 10px; /* atas = 10px; kanan = 60px; bawah = 150px; kiri = 10px; */
+        }
+
+        #box-4 {
+            background: black;
+            color: white;
+            width: 20%;
+            height: 100px;
+            margin-top: 1em; 
+            margin-right: 2em; 
+            margin-bottom: 2em; 
+            margin-left: 3em; 
+        }
+
+    </style>
+
+</head>
+<body>
+    <h1>Margin</h1>
+
+    <div id="box-1">Ini adalah Box 1</div>
+    <div id="box-2">Ini adalah Box 2</div>
+    <div id="box-3">Ini adalah Box 3</div>
+    <div id="box-4">Ini adalah Box 4</div>
+
+</body>
+</html>

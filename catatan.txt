@@ -1,0 +1,58 @@
+CSS ==> men-styling HTML 
+
+Format penulisan CSS: 
+
+selector {
+    property1: value1;
+    ...
+    propertyN: valueN;
+}
+
+A. selector    ==> target dari elemen yang akan di-styling / dimanipulasi tampilannya
+
+selector 
+1. tag html (tanpa simbol kurang dari dan lebih dari)
+  Contoh: 
+    <h1>...</h1>    ==> selector    ==> h1 { ... }
+    <p>...</p>    ==> selector      ==> p { ... }
+2. kombinasi tag html
+   <div>
+        <h1>Konten 1</h1>
+   </div>
+   <h1>Konten 2</h1>
+   Ingin men-styling h1 yang kontennya "Konten 1"
+
+    - div > h1 { ... }
+    - div h1 { ... }
+3. nama_id / value dari atribut id  ==> #nama_id 
+4. nama_class / value dari atribut class  ==> .nama_class 
+
+B. property     ==> sifat / karakteristik dari elemen HTML yang mau dimodifikasi / dimanipulasi
+Contoh: 
+    - color 
+    - background 
+    - border
+    - margin
+    - padding
+
+C. value    ==> nilai dari property yang ingin diubah
+    - color: blue; #fff; 
+    - margin: 10px;
+
+Class dan ID 
+
+Class: 
+- nama class bisa digunakan lebih dari 1x di dalam 1 file html yang sama
+- disimbolkan dengan tanda titik (.), diikuti dengan nama class 
+- class digunakan untuk sesuatu yang berulang-ulang
+
+ID: 
+- bersifat unik, tidak boleh ada nama_id yang sama di dalam 1 file html
+- disimbolkan dengan tanda pagar (#), diikuti dengan nama id
+
+
+
+Cara penulisan CSS: 
+- inline CSS 
+- internal CSS 
+- external CSS

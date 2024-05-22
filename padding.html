@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padding</title>
+
+    <style>
+
+        /*
+            kondisi 1
+                property: value;    ==> value = atas = kanan = bawah = kiri
+
+            kondisi 2
+                property: value1 value2;    ==> value1 = atas = bawah; value2 = kanan = kiri
+
+            kondisi 3
+                property: value1 value2 value3 value4;    ==> value1 = atas; value2 = kanan; value3 = bawah; value4 = kiri
+
+            kondisi 4
+                property-top: value1;
+                property-right: value2;
+                property-bottom: value3;
+                property-left: value4;
+
+        */
+
+        body {
+            background: greenyellow;
+        }
+
+        /* tanpa property box sizing */
+        #box-1 {
+            background: blueviolet;
+            height: 300px; /* 200 + 30 + 30 ==> 260px */
+            width: 300px; /* 300 + 30 + 30 ==> 360px */ 
+            margin: 20px; /* semua arahnya 20px */
+            padding: 20px;
+            color: #fff;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            border-radius: 10px;
+            overflow-y: auto;
+            font-size: 12px;
+            text-align: justify ;
+        }
+
+        /* menggunakan box sizing: border-box */
+        #box-2 {
+            background: red;
+            height: 100px;
+            width: 150px;  
+            margin: 60px 150px; /* atas = bawah = 60px; kanan = kiri = 150px */
+            padding: 15px 50px;
+            box-sizing: border-box;
+            font-style: italic; /* tulisan cetak miring */
+            text-align: right;
+
+        }
+
+        #box-3 {
+            background: orange;
+            height: 200px;
+            width: 200px;  
+            margin:  10px 60px 150px 10px; /* atas = 10px; kanan = 60px; bawah = 150px; kiri = 10px; */
+            padding:  30px 20px 10px 50px; /* atas = 10px; kanan = 60px; bawah = 150px; kiri = 10px; */
+            text-decoration: line-through; /* membuat efek tulisan coret */
+        }
+
+        #box-4 {
+            background: black;
+            color: white;
+            width: 20%;
+            height: 100px;
+            margin-top: 1em; 
+            margin-right: 2em; 
+            margin-bottom: 2em; 
+            margin-left: 3em; 
+            padding-top: 2em; 
+            padding-right: 3em; 
+            padding-bottom: 1em; 
+            padding-left: 4em; 
+        }
+
+    </style>
+
+</head>
+<body>
+    <h1>Padding</h1>
+
+    <div id="box-1">
+        <h1>Judul Artikel 1</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit eligendi consectetur fuga sapiente sed, ab numquam commodi pariatur architecto ipsum cum tempora perferendis vero? Dolorum eveniet quibusdam adipisci molestiae ipsam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed laborum ipsam rerum maiores non consequatur expedita nulla quos vero sapiente? Earum cumque aspernatur culpa sequi provident fuga illo nemo totam!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit eligendi consectetur fuga sapiente sed, ab numquam commodi pariatur architecto ipsum cum tempora perferendis vero? Dolorum eveniet quibusdam adipisci molestiae ipsam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed laborum ipsam rerum maiores non consequatur expedita nulla quos vero sapiente? Earum cumque aspernatur culpa sequi provident fuga illo nemo totam!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit eligendi consectetur fuga sapiente sed, ab numquam commodi pariatur architecto ipsum cum tempora perferendis vero? Dolorum eveniet quibusdam adipisci molestiae ipsam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed laborum ipsam rerum maiores non consequatur expedita nulla quos vero sapiente? Earum cumque aspernatur culpa sequi provident fuga illo nemo totam!</p>
+    </div>
+    <div id="box-2">Ini adalah Box 2</div>
+    <div id="box-3">Ini adalah Box 3</div>
+    <div id="box-4">Ini adalah Box 4</div>
+
+</body>
+</html>
